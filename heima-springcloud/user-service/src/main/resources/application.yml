@@ -19,6 +19,6 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1
     #续约间隔,默认30秒
-    lease-renewal-interval-in-seconds: 5
+    #lease-renewal-interval-in-seconds: 5
     #服务失效时间,默认90秒
-    lease-expiration-duration-in-seconds: 5
+    #lease-expiration-duration-in-seconds: 5
