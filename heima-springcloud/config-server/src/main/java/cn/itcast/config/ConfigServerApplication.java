@@ -1,15 +1,15 @@
-package cn.itcast.user;
+package cn.itcast.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import tk.mybatis.spring.annotation.MapperScan;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
-@MapperScan("cn.itcast.user.mapper")
-@EnableDiscoveryClient //开启Eureka客户端发现功能
-public class UserApplication {
+@EnableConfigServer //开启配置服务
+@EnableDiscoveryClient
+public class ConfigServerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(UserApplication.class,args);
+        SpringApplication.run(ConfigServerApplication.class, args);
     }
 }
